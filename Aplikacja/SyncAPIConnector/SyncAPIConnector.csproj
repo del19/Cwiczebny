@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6BC484B-A042-4CA6-9079-E91136D92207}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SyncAPIConnector</RootNamespace>
+    <AssemblyName>SyncAPIConnector</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>JSON\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="codes\MARGIN_MODE.cs" />
+    <Compile Include="codes\PROFIT_MODE.cs" />
+    <Compile Include="codes\SWAP_TYPE.cs" />
+    <Compile Include="codes\SWAP_ROLLOVER_TYPE.cs" />
+    <Compile Include="codes\EXECUTION_CODE.cs" />
+    <Compile Include="codes\PERIOD_CODE.cs" />
+    <Compile Include="codes\REQUEST_STATUS.cs" />
+    <Compile Include="codes\TRADE_OPERATION_CODE.cs" />
+    <Compile Include="codes\TRADE_TRANSACTION_TYPE.cs" />
+    <Compile Include="commands\AllSymbolsCommand.cs" />
+    <Compile Include="commands\APICommandFactory.cs" />
+    <Compile Include="commands\BaseCommand.cs" />
+    <Compile Include="commands\ChartLastCommand.cs" />
+    <Compile Include="commands\ChartRangeCommand.cs" />
+    <Compile Include="commands\CommissionDefCommand.cs" />
+    <Compile Include="commands\ConfirmPricedCommand.cs" />
+    <Compile Include="commands\ConfirmRequotedCommand.cs" />
+    <Compile Include="commands\ProfitCalculationCommand.cs" />
+    <Compile Include="commands\CurrentUserDataCommand.cs" />
+    <Compile Include="commands\LoginCommand.cs" />
+    <Compile Include="commands\LogoutCommand.cs" />
+    <Compile Include="commands\MarginLevelCommand.cs" />
+    <Compile Include="commands\MarginTradeCommand.cs" />
+    <Compile Include="commands\NewsCommand.cs" />
+    <Compile Include="commands\ServerTimeCommand.cs" />
+    <Compile Include="commands\SymbolCommand.cs" />
+    <Compile Include="commands\SymbolGroupsCommand.cs" />
+    <Compile Include="commands\TickPricesCommand.cs" />
+    <Compile Include="commands\TradeRecordsCommand.cs" />
+    <Compile Include="commands\TradesCommand.cs" />
+    <Compile Include="commands\TradesHistoryCommand.cs" />
+    <Compile Include="commands\TradeTransactionCommand.cs" />
+    <Compile Include="commands\TradeTransactionStatusCommand.cs" />
+    <Compile Include="commands\TradingHoursCommand.cs" />
+    <Compile Include="errors\APICommandConstructionException.cs" />
+    <Compile Include="errors\APICommunicationException.cs" />
+    <Compile Include="errors\APIReplyParseException.cs" />
+    <Compile Include="errors\ERR_CODE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="records\BaseResponseRecord.cs" />
+    <Compile Include="records\ChartLastInfoRecord.cs" />
+    <Compile Include="records\ChartRangeInfoRecord.cs" />
+    <Compile Include="records\CommandArguments.cs" />
+    <Compile Include="records\HoursRecord.cs" />
+    <Compile Include="records\MarginLevelRecord.cs" />
+    <Compile Include="records\NewsTopicRecord.cs" />
+    <Compile Include="records\RateInfoRecord.cs" />
+    <Compile Include="records\StringHelperClass.cs" />
+    <Compile Include="records\SymbolGroupRecord.cs" />
+    <Compile Include="records\SymbolRecord.cs" />
+    <Compile Include="records\TickRecord.cs" />
+    <Compile Include="records\TradeRecord.cs" />
+    <Compile Include="records\TradeTransInfoRecord.cs" />
+    <Compile Include="responses\AllSymbolsResponse.cs" />
+    <Compile Include="responses\APIErrorResponse.cs" />
+    <Compile Include="responses\APIResonseFactory.cs" />
+    <Compile Include="responses\BaseResponse.cs" />
+    <Compile Include="responses\ChartLastResponse.cs" />
+    <Compile Include="responses\ChartRangeResponse.cs" />
+    <Compile Include="responses\CommissionDefResponse.cs" />
+    <Compile Include="responses\ConfirmPricedResponse.cs" />
+    <Compile Include="responses\ConfirmRequotedResponse.cs" />
+    <Compile Include="responses\ProfitCalculationResponse.cs" />
+    <Compile Include="responses\CurrentUserDataResponse.cs" />
+    <Compile Include="responses\LoginResponse.cs" />
+    <Compile Include="responses\LogoutResponse.cs" />
+    <Compile Include="responses\MarginLevelResponse.cs" />
+    <Compile Include="responses\MarginTradeResponse.cs" />
+    <Compile Include="responses\NewsResponse.cs" />
+    <Compile Include="responses\ServerTimeResponse.cs" />
+    <Compile Include="responses\SymbolGroupsResponse.cs" />
+    <Compile Include="responses\SymbolResponse.cs" />
+    <Compile Include="responses\TickPricesResponse.cs" />
+    <Compile Include="responses\TradeRecordsResponse.cs" />
+    <Compile Include="responses\TradesHistoryResponse.cs" />
+    <Compile Include="responses\TradesResponse.cs" />
+    <Compile Include="responses\TradeTransactionResponse.cs" />
+    <Compile Include="responses\TradeTransactionStatusResponse.cs" />
+    <Compile Include="responses\TradingHoursResponse.cs" />
+    <Compile Include="streaming\StreamingListener.cs" />
+    <Compile Include="streaming\StreamingAPIConnect.cs" />
+    <Compile Include="sync\APISocket.cs" />
+    <Compile Include="sync\APISocketOperation.cs" />
+    <Compile Include="sync\APIState.cs" />
+    <Compile Include="sync\ServerData.cs" />
+    <Compile Include="sync\SyncAPIConnect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
