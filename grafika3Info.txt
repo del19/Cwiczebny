@@ -1,0 +1,6 @@
+tesselationExample
+tesselationBWExample- zrobienie obiektow w "paski"
+load3dExample-ladowanie obiektu z pliku
+shadingexample-do cieniowania- moze sie przydac
+
+interactiontest- wybranie obiektu ktory jest wlasnie wybrany
