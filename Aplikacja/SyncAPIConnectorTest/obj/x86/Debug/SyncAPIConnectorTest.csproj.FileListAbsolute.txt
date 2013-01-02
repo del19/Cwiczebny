@@ -1,0 +1,10 @@
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\SyncAPIConnectorTest.exe
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\SyncAPIConnectorTest.pdb
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\SyncAPIConnector.dll
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\SyncAPIConnector.pdb
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\obj\x86\Debug\SyncAPIConnectorTest.csprojResolveAssemblyReference.cache
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\obj\x86\Debug\SyncAPIConnectorTest.exe
+C:\Users\mateu_000\Desktop\xAPI-dotNet-CONTEST\SyncAPIConnectorTest\obj\x86\Debug\SyncAPIConnectorTest.pdb
